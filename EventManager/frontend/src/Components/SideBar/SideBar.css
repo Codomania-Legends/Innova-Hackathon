@@ -1,0 +1,13 @@
+.main-side-bar {
+    height: 95%;
+    width: 7%;
+    top: 1em;
+    position: relative;
+    left: 1%;
+}
+.side-box {
+    height: 100%;
+    width: 100%;
+    background: antiquewhite;
+    border-radius: 1em;
+}
