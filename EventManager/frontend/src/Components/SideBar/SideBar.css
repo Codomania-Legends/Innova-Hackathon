@@ -27,6 +27,7 @@
 }
 
 .iconDiv.flex {
+    transition:1s;
     height: 7%;
 }
 
@@ -38,8 +39,8 @@
     width: 35%;
 }
 button.slide-btn {
-    /* height: 8%; */
-    width: 20%;
+    height: 5%;
+    /* width: 20%; */
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     border: none;
@@ -74,7 +75,6 @@ img.side-rightarrow {
     display: flex
 ;
     justify-content: start;
-    /* flex: 1; */
     width: 70%;
     align-items: center;
     color: white;
@@ -94,16 +94,68 @@ img.unshiftIcons {
     height: 100%;
 }
 .iconDiv.flex {
+    transition:1s;
     height: 7%;
     width: 80%;
     display: flex
 ;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 .icons-all.flex {
     flex-direction: column;
     height: 60%;
     justify-content: space-evenly;
     width: 80%;
+    transition: 0.5s;
+}
+#setWidth{
+    justify-content: center;
+    transition: 0.5s;
+}
+
+@keyframes hideAnimate {
+    0%{
+        opacity: 1;
+        display: none;
+    }
+    50%{
+        display: none;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes showAnimate {
+    0%{
+        opacity: 0;
+        display: none;
+    }
+    50%{
+        display: flex;
+    }
+    100%{
+        opacity: 1;
+        display: flex;
+    }
+}
+.user.flex {
+    width: 80%;
+}
+.profileSettingDiv.flex {
+    width: 70%;
+    justify-content: space-evenly;
+    height: 40%;
+}
+#shiftProfile {
+    margin-right: 0.5em;
+}
+img.unshiftIcons {
+    height: 100%;
+    width: 50%;
+}
+img{
+    border-radius: 0;
 }

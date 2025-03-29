@@ -34,3 +34,7 @@ const Calender = () => {
 };
 
 export default Calender;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 23d26fbb33e5c739f51349ec6f5d0e40df99723a
