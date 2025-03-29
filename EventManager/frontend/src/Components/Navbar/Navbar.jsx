@@ -11,15 +11,21 @@ function Navbar() {
                 <div className='logo flex'>
                     <img src={logo} alt="" className='logo-img' />
                 </div>
-                {/* <div className='search-input flex'>
-                    <input type="text" placeholder='Search here' className='input-sea' />
+                <div className='search-input flex'>
+                    <div className="iconsearch flex">
+                        <input type="text" placeholder='Search here' className='input-sea' />
+                        <i className='fa-solid fa-search'></i>
+
+                    </div>
                 </div>
                 <div className='signin flex'>
                     <img src={signin} alt="" className='nav-sign' />
+                    <span className="span">SignIn</span>
                 </div>
                 <div className='aboutus flex'>
                     <img src={aboutus} alt="" className='nav-about' />
-                </div> */}
+                    <span className="span">About us</span>
+                </div>
             </div>
         </div>
     </main>
