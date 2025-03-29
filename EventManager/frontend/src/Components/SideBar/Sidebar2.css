@@ -1,14 +1,17 @@
-.main-side-bar {
+
+.main-bar {
     height: 95%;
-    width: 11%;
+    width: 6%;
     top: 1em;
     position: absolute;
     left: 1%;
     justify-content: left;
+    overflow: hidden;
+    z-index: -2;
 }
-.side-box {
+.side2-box {
     height: 100%;
-    width: 65%;
+    width: 80%;
     background: rgb(83, 75, 64);
     border-radius: 1em;
     flex-direction: column;
@@ -18,28 +21,34 @@
     background: linear-gradient(#676767 0%, #1D1D1D 100%);
     box-shadow: 8px 5px 5px rgb(0 0 0 / 25%), -6px -4px 7px rgb(202 202 202 / 25%);
 }
-
-.icons-all.flex {
+.h-w2 {
+    width: 12%;
+}
+img.h-w.side-attendance {
+    width: 37%;
+}
+img.h-w.side-user {
+    width: 85%;
+}
+.icons2-all.flex {
     flex-direction: column;
-    height: 60%;
+    /* gap: 2em; */
+    height: 70%;
     justify-content: space-evenly;
-    width: 80%;
 }
 
-.iconDiv.flex {
-    height: 7%;
+.user2.flex {
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
 }
-
-.user.flex {
-    height: 12%;
-}
-.slide-right-icon {
+.slide2-right-icon {
     height: 100%;
-    width: 35%;
-}
-button.slide-btn {
-    /* height: 8%; */
     width: 20%;
+}
+button.slide2-btn {
+    /* height: 8%; */
+    width: 10%;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     border: none;
@@ -58,52 +67,27 @@ img.side-rightarrow {
     /* box-shadow: 2px 3px 4px black; */
     backdrop-filter: drop-shadow(2px 3px 4px rgb( 0 0 0 /25% ));
 }
-
-.showSideBar{
-    width: 11%;
-    transition: 0.5s;
+img.h-w2.side-user {
+    height: 50%;
+    width: 16%;
 }
-.hideSideBar{
-    width: 20%;
-    transition: 0.5s;
-}
-
-.showText {
-    opacity: 1;
-    transition: 0.5s;
-    display: flex
-;
+.set2.flex {
     justify-content: start;
-    /* flex: 1; */
-    width: 70%;
-    align-items: center;
-    color: white;
-    animation: showAnimate 500ms 1;
+    padding-left: 2em;
+    gap: 1em;
 }
-.hideText{
-    opacity: 0;
-    transition : 1s;
-    display:none;
-    animation: hideAnimate 500ms 1;
+.span {
+    color: white;
+    font-size: larger;
 }
 
-img.unshiftIcons {
-    height: 100%;
+.showMainBar{
+    z-index: 1;
+    width: 20%;
+    transition: 1s;
 }
-.shiftIcon {
-    height: 100%;
-}
-.iconDiv.flex {
-    height: 7%;
-    width: 80%;
-    display: flex
-;
-    justify-content: space-between;
-    align-items: center;
-}
-.icons-all.flex {
-    flex-direction: column;
-    height: 60%;
-    justify-content: space-evenly;
-    width: 80%;
+.hideMainBar{
+    z-index: -2;
+    width: 6%;
+    transition: 1s;
 }
